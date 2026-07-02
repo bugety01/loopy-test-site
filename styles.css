@@ -157,7 +157,7 @@ h2 {
 
 .orbit-stage {
   position: relative;
-  height: clamp(410px, 52vw, 640px);
+  height: clamp(390px, 49vw, 600px);
   margin: 58px auto 0;
   max-width: 1050px;
   perspective: 1200px;
@@ -195,6 +195,59 @@ h2 {
 .phone-widget.two { left: 18%; bottom: 17%; width: 64%; height: 18%; border-radius: 18px; background: rgba(255,255,255,.3); }
 
 .section-heading { text-align:center; max-width:880px; margin:0 auto 50px; }
+
+.collection {
+  background: linear-gradient(180deg, #f5f5f7 0%, #ffffff 62%, #f6f7fb 100%);
+  padding-top: 96px;
+}
+
+.product-tiles {
+  display: grid;
+  grid-template-columns: 1.04fr 1.18fr 1.04fr;
+  gap: 18px;
+  margin-top: 42px;
+}
+
+.product-tile {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  padding: 28px;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 36px;
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+}
+
+.product-tile::before {
+  content: "";
+  position: absolute;
+  inset: 22px 22px auto;
+  height: 190px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, rgba(255,255,255,.72), rgba(255,255,255,.16));
+  border: 1px solid rgba(255,255,255,.42);
+  box-shadow: inset 0 1px rgba(255,255,255,.42), 0 24px 70px rgba(0,0,0,.12);
+}
+
+.flow-tile::before { background: radial-gradient(circle at 26% 28%, #fff, transparent 18%), linear-gradient(135deg, #90cdfd, #8f76e8 58%, #d98bc7); }
+.studio-tile { color: white; background: linear-gradient(145deg, #090a0f, #24263a); }
+.studio-tile::before { background: radial-gradient(circle at 22% 30%, #55c5ff, transparent 20%), radial-gradient(circle at 82% 66%, #b66acf, transparent 22%), #0b1020; }
+.frame-tile::before { width: 46%; left: 50%; transform: translateX(-50%); border-radius: 34px; background: linear-gradient(160deg, #151827, #356fd6 58%, #c96abc); }
+
+.product-tile .chip,
+.product-tile h3,
+.product-tile p,
+.product-tile .tile-link { position: relative; z-index: 1; }
+.product-tile h3 { margin: 18px 0 10px; font-size: clamp(34px, 4vw, 52px); line-height: 1.05; letter-spacing: -.055em; }
+.product-tile p { max-width: 320px; margin: 0 0 22px; color: var(--muted); font-weight: 640; line-height: 1.58; letter-spacing: -.015em; }
+.studio-tile p { color: #c7c9d4; }
+.tile-link { align-self: flex-start; color: #0767d8; font-size: 14px; font-weight: 850; }
+.studio-tile .tile-link { color: #fff; }
+
 .section-lead, .experience-lead { max-width: 760px; margin: 22px auto 0; font-size: clamp(17px, 1.8vw, 21px); }
 .ecosystem {
   padding-top: 88px;
@@ -305,12 +358,14 @@ h2 {
   .tablet-card { width: 69%; left: 2%; top: 9%; }
   .desktop-card { width: 72%; left: 14%; top: 34%; }
   .phone-card { width: 30%; right: 4%; top: 56%; }
+  .product-tiles,
   .ecosystem-grid,
   .product-section,
   .product-section.desktop,
   .experience,
   .cards { grid-template-columns: 1fr; }
   .product-section { min-height: auto; }
+  .product-tile { min-height: 360px; }
   .product-section.desktop .product-visual { order: 2; }
   .product-copy p:not(.eyebrow), .experience-lead { max-width: 680px; }
   .specs { grid-template-columns: 1fr; }
@@ -336,8 +391,11 @@ h2 {
   .phone-row { gap: 8px; }
   .phone-large { width: min(128px, 28vw); border-width: 7px; border-radius: 32px; }
   .phone-large:nth-child(2) { transform: translateY(-18px); }
-  .ecosystem-card, .moment-card, .compare-card { padding: 22px; border-radius: 28px; }
+  .ecosystem-card, .moment-card, .compare-card, .product-tile { padding: 22px; border-radius: 28px; }
   .ecosystem-card { min-height: 240px; }
+  .product-tile { min-height: 330px; }
+  .product-tile::before { inset: 18px 18px auto; height: 150px; }
+  .product-tile h3 { font-size: 32px; }
   .specs li { padding: 16px; }
   .film-frame { height: 340px; border-radius: 30px; }
   .play-button { width:70px; height:70px; font-size:22px; }
