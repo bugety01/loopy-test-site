@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apple-Inspired Product Showcase</title>
+  <meta name="description" content="태블릿, 데스크톱, 폰을 위한 프리미엄 광고형 반응형 웹사이트 예제" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" data-glass>
+    <a class="brand" href="#top" aria-label="홈으로 이동">
+      <span class="brand-mark">◖</span>
+      <span>LUMEN</span>
+    </a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="#tablet">Tablet</a>
+      <a href="#desktop">Desktop</a>
+      <a href="#phone">Phone</a>
+      <a href="#compare">Compare</a>
+    </nav>
+    <a class="header-cta" href="#buy">예약하기</a>
+  </header>
+
+  <main id="top">
+    <section class="hero section" aria-labelledby="hero-title">
+      <p class="eyebrow reveal">새로운 제품군 공개</p>
+      <h1 id="hero-title" class="hero-title reveal">가장 조용하게<br />가장 강력하게.</h1>
+      <p class="hero-copy reveal">태블릿, 데스크톱, 폰이 하나의 흐름으로 연결되는 프리미엄 디바이스 광고형 웹사이트 예제입니다.</p>
+      <div class="hero-actions reveal">
+        <a class="button primary" href="#buy">지금 살펴보기</a>
+        <a class="button ghost" href="#film">필름 보기 <span>›</span></a>
+      </div>
+
+      <div class="orbit-stage reveal" aria-label="세 가지 제품 시각화">
+        <div class="glow glow-blue"></div>
+        <div class="glow glow-pink"></div>
+        <article class="device tablet-card" aria-label="Lumen Tab Ultra">
+          <div class="screen tablet-screen">
+            <div class="window chrome"></div>
+            <div class="window canvas"></div>
+            <div class="dock"></div>
+          </div>
+          <span class="device-label">Tab Ultra</span>
+        </article>
+        <article class="device desktop-card" aria-label="Lumen Studio Desktop">
+          <div class="monitor">
+            <div class="screen desktop-screen">
+              <div class="desktop-grid"></div>
+              <div class="desktop-panel"></div>
+            </div>
+          </div>
+          <div class="stand"></div>
+          <span class="device-label">Studio</span>
+        </article>
+        <article class="device phone-card" aria-label="Lumen Phone Pro">
+          <div class="screen phone-screen">
+            <div class="dynamic-island"></div>
+            <div class="phone-widget one"></div>
+            <div class="phone-widget two"></div>
+          </div>
+          <span class="device-label">Phone Pro</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="tablet" class="product-section tablet section">
+      <div class="product-copy reveal">
+        <p class="eyebrow">Lumen Tab Ultra</p>
+        <h2>손끝에서 열리는<br />초고해상도 캔버스.</h2>
+        <p>얇은 바디, 120Hz Liquid Glass 디스플레이, 크리에이터를 위한 펜 입력까지. 아이디어가 떠오르는 순간 바로 시작하세요.</p>
+        <ul class="specs">
+          <li><strong>12.9”</strong><span>ProMotion Display</span></li>
+          <li><strong>18h</strong><span>All-day battery</span></li>
+          <li><strong>5.1mm</strong><span>Ultra thin body</span></li>
+        </ul>
+      </div>
+      <div class="product-visual reveal">
+        <div class="tablet-large device-large">
+          <div class="screen tablet-large-screen">
+            <span>CREATE</span>
+            <div class="brush"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="desktop" class="product-section desktop section dark-panel">
+      <div class="product-visual reveal">
+        <div class="desktop-large">
+          <div class="monitor large-monitor">
+            <div class="screen desktop-large-screen">
+              <div class="code-card"></div>
+              <div class="render-card"></div>
+              <div class="timeline-card"></div>
+            </div>
+          </div>
+          <div class="stand large-stand"></div>
+        </div>
+      </div>
+      <div class="product-copy reveal">
+        <p class="eyebrow">Lumen Studio</p>
+        <h2>책상 위의 조용한<br />크리에이티브 엔진.</h2>
+        <p>컴팩트한 일체형 디자인에 6K급 시각 경험과 차세대 데스크톱 성능을 담았습니다. 작업 공간은 단순하게, 결과물은 압도적으로.</p>
+        <ul class="specs inverse">
+          <li><strong>6K</strong><span>Studio Retina</span></li>
+          <li><strong>32-core</strong><span>Neural Engine</span></li>
+          <li><strong>0dB</strong><span>Whisper cooling</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="phone" class="product-section phone section">
+      <div class="product-copy reveal">
+        <p class="eyebrow">Lumen Phone Pro</p>
+        <h2>당신의 하루를<br />한 손 안에.</h2>
+        <p>빛을 더 많이 담는 카메라, 더 오래가는 배터리, 더 매끄러운 인터랙션. 매 순간을 영화처럼 기록하세요.</p>
+        <ul class="specs">
+          <li><strong>48MP</strong><span>Fusion camera</span></li>
+          <li><strong>2TB</strong><span>Pro storage</span></li>
+          <li><strong>IP68</strong><span>Water resistant</span></li>
+        </ul>
+      </div>
+      <div class="product-visual reveal phone-row">
+        <div class="phone-large color-a"><div class="dynamic-island"></div><div class="photo-stack"></div></div>
+        <div class="phone-large color-b"><div class="dynamic-island"></div><div class="music-card"></div></div>
+        <div class="phone-large color-c"><div class="dynamic-island"></div><div class="map-card"></div></div>
+      </div>
+    </section>
+
+    <section id="film" class="film section dark-panel reveal">
+      <p class="eyebrow">Campaign Film</p>
+      <h2>하나의 생태계. 세 가지 방식.</h2>
+      <div class="film-frame">
+        <button class="play-button" type="button" aria-label="데모 필름 재생">▶</button>
+        <div class="film-gradient"></div>
+      </div>
+    </section>
+
+    <section id="compare" class="compare section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Compare</p>
+        <h2>당신에게 맞는 Lumen을 선택하세요.</h2>
+      </div>
+      <div class="cards">
+        <article class="compare-card reveal">
+          <span class="chip">Tablet</span>
+          <h3>Tab Ultra</h3>
+          <p>드로잉, 필기, 이동 중 작업에 최적.</p>
+          <strong>₩1,290,000부터</strong>
+        </article>
+        <article class="compare-card featured reveal">
+          <span class="chip">Desktop</span>
+          <h3>Studio</h3>
+          <p>디자인, 영상, 개발을 위한 메인 워크스테이션.</p>
+          <strong>₩2,490,000부터</strong>
+        </article>
+        <article class="compare-card reveal">
+          <span class="chip">Phone</span>
+          <h3>Phone Pro</h3>
+          <p>사진, 영상, 일상 생산성을 한 손에.</p>
+          <strong>₩1,550,000부터</strong>
+        </article>
+      </div>
+    </section>
+
+    <section id="buy" class="closing section reveal">
+      <p class="eyebrow">Available soon</p>
+      <h2>미래의 작업 방식을<br />먼저 경험하세요.</h2>
+      <p>이 페이지는 실제 Apple 공식 사이트가 아닌, 프리미엄 제품 광고 랜딩페이지 제작 예제입니다.</p>
+      <a class="button primary large" href="mailto:hello@example.com">데모 문의하기</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 Lumen Concept</span>
+    <span>Apple-inspired demo. Not affiliated with Apple Inc.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
